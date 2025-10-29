@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Vignesh</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Extra About page styling */
+    .about-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #00eaff;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .about-section {
+      margin-top: 30px;
+      text-align: left;
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✅ ";
+      color: #00eaff;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </header>
+
+  <section>
+    <div class="about-container">
+      <img src="profile.jpg" alt="Vignesh" class="profile-img">
+      <h1>About Me</h1>
+      <p>Hi! I’m <b>Vignesh</b>, a dedicated and curious student pursuing my degree in <b>Artificial Intelligence and Machine Learning</b> at the <b>Global Academy of Technical Education</b>, Bangalore.</p>
+
+      <div class="about-section">
+        <h2>🎯 My Goal</h2>
+        <p>
+          My goal is to become a skilled AI & ML engineer who can create intelligent systems that make life easier for people. 
+          I’m passionate about problem-solving, innovation, and technology that impacts the real world.
+        </p>
+      </div>
+
+      <div class="about-section">
+  <h2>💡 Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">Java</div>
+    <div class="skill-card">Python (Basics)</div>
+    <div class="skill-card">Machine Learning Concepts</div>
+    <div class="skill-card">C Programming</div>
+    <div class="skill-card">Data Structures & Algorithms</div>
+    <div class="skill-card">DBMS (MySQL)</div>
+    <div class="skill-card">Git & GitHub</div>
+    <div class="skill-card">Responsive Web Design</div>
+    <div class="skill-card">UI/UX Basics</div>
+    <div class="skill-card">Data Visualization (Matplotlib, Seaborn)</div>
+    <div class="skill-card">AI Tools (ChatGPT, Gemini, Copilot)</div>
+    <div class="skill-card">Communication Skills</div>
+    <div class="skill-card">Team Collaboration</div>
+  </div>
+</div>
+
+      </div>
+
+      <div class="about-section">
+        <h2>🎓 Education</h2>
+        <ul>
+          <li><b>B.E. in AI & ML</b> – Global Academy of Technical Education, Bangalore</li>
+          <li><b>Pre-University</b> – Global Academy of Technical Education, Bangalore</li>
+          <li><b>SSLC</b> – Sri Sathya Sai Academy Of Integrated Education</li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>🌍 Interests</h2>
+        <p>
+          When I’m not coding, I enjoy exploring new technologies, watching tech videos, reading about AI trends, and playing cricket 🏏.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vignesh | All Rights Reserved
+  </footer>
+</body>
+</html>

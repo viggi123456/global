@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vignesh | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Extra styling for home page background --- */
+    .hero {
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* dark overlay for better text visibility */
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #00eaff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #00eaff;
+      color: black;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .hero a:hover {
+      background: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio 👋</h1>
+      <p>Hi, I'm <b>Vignesh</b>, a passionate student of Artificial Intelligence and Machine Learning at Global Academy of Technical Education.</p>
+      <p>Explore my projects and learn more about me!</p>
+      <a href="about.html">Learn More About Me</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vignesh | All Rights Reserved
+  </footer>

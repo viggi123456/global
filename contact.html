@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function sendMessage() {
+      const name = document.getElementById('name').value;
+      alert(`Thank you, ${name}! Your message has been sent successfully.`);
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </header>
+
+  <section>
+    <h1>Contact Me</h1>
+    <form onsubmit="return sendMessage()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Vignesh | All Rights Reserved
+  </footer>
+</body>
+</html>
